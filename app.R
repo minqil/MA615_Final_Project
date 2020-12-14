@@ -26,7 +26,7 @@ ui<-navbarPage("Stock Portfolio",
                                        inputId = "price_symbol1",
                                        label = "Symbol:",
                                        choices = c("AAPL", "TSLA", "GILD", "ZG", "Portfolio")  ),
-                                     p("Note: stock selection was based on", a(href="https://capital.com/best-stocks-to-invest-in-right-now", "this article" ),"from capital.com website.")
+                                     p("Note: stock selection was based on", a(href="https://capital.com/best-stocks-to-invest-in-right-now", "an article" ),"from capital.com website.")
                                      ),
                                      
                                    mainPanel(
