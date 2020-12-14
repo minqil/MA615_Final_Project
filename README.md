@@ -2,7 +2,7 @@
 
 ## Project Introduction
 
-I chose the third project. In this project, stock selection was based on [a article](https://capital.com/best-stocks-to-invest-in-right-now) from capital.com website. According to this article, I selected Apple (AAPL), Tesla (TSLA), Gilead (GILD), and Zillow (ZG) stock. For this project, I assumed an initial position of $250,000 in cash starting on 1 July 2020 and calculated returns on 1 December 2020.
+I chose the third project. In this project, stock selection was based on [an article](https://capital.com/best-stocks-to-invest-in-right-now) from capital.com website. According to this article, I selected Apple (AAPL), Tesla (TSLA), Gilead (GILD), and Zillow (ZG) stock. For this project, I assumed an initial position of $250,000 in cash starting on 1 July 2020 and calculated returns on 1 December 2020.
  
  ## File Introduction
  
