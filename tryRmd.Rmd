@@ -1,0 +1,74 @@
+---
+title: "Final Project"
+author: "Minqi Li"
+date: "12/10/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(lubridate)
+library(bizdays)
+library(tidyquant)
+library(quantmod)
+```
+
+# SP500
+```{r}
+sp500<-tq_index("SP500")
+
+```
+
+
+
+```{r}
+options("getSymbols.warning4.0"=FALSE)
+options("getSymbols.yahoo.warning"=FALSE)
+
+# Downloading Google price using quantmod
+b <- getSymbols("AAPL",from = '2020-07-01',to = "2020-12-02",warnings = FALSE,auto.assign = TRUE, src="yahoo")
+
+save(AAPL,file="AAPL.RData")
+
+chartSeries(to.daily(AAPL),theme=chartTheme('white'))
+chartSeries(AAPL,name="Platinum (.oz) in $USD")
+```
+
+
+```{r}
+# Downloading Google price using quantmod
+c <- getSymbols("TSLA",from = '2020-07-01',to = "2020-12-02",warnings = FALSE,auto.assign = TRUE, src="yahoo")
+
+
+chartSeries(to.daily(TSLA),theme=chartTheme('white'))
+```
+
+```{r}
+# Downloading Google price using quantmod
+
+
+chartSeries(to.daily(GILD),theme=chartTheme('white'))
+```
+
+```{r}
+# Downloading Google price using quantmod
+
+
+chartSeries(to.daily(ZG),theme=chartTheme('white'))
+```
+
+```{r}
+apple<-tq_get("AAPL",get = "stock.prices",from = '2020-07-01',to = "2020-12-01")
+
+apple_return<- apple %>% tq_mutate(select = close, mutate_fun = periodReturn,
+              period = "daily")
+```
+
+
+```{r}
+AAPL1 <- tq_get("AAPL", get = "stock.prices", from = "2015-09-01", to = "2016-12-31")
+```
+
+
